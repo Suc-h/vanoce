@@ -9,10 +9,10 @@ namespace Zvedat
 {
     class Osoba
     {
-        string jmeno;
-        string prijmeni;
-        int hmotnost;
-        double vyska;
+        protected string jmeno;
+        protected string prijmeni;
+        protected int hmotnost;
+        protected double vyska;
 
         public Osoba(string jmeno, string prijmeni, int hmotnost, double vyska)
         {
@@ -30,7 +30,7 @@ namespace Zvedat
             }
             set
             {
-
+                jmeno = value;
             }
         }
         string Prijmeni
@@ -41,7 +41,7 @@ namespace Zvedat
             }
             set
             {
-
+                prijmeni = value;
             }
         }
         int Hmotnost
@@ -52,9 +52,9 @@ namespace Zvedat
             }
             set
             {
-                if(value>=0&& value <=300)
+                if(value>0&& value <=300)
                 {
-                   this.hmotnost = value;
+                   hmotnost = value;
                 }
                 else
                 {
@@ -70,22 +70,27 @@ namespace Zvedat
             }
             set
             {
-                if(value>50)
-                {
-                    this.vyska = value;
-                }
+                 if(value>2.72) // nejvyšší člověk v historii 2,72m
+                 {
+                     vyska = value;
+                 }
+                 else
+                 {
+                     vyska = value / 100;
+                 }
+                
             }
         }
         
-        public virtual string BMI()
+        public virtual double BMI()
         {
             double bmi = hmotnost / (vyska * vyska);
-            return  " "+bmi;
+            return Math.Round(bmi,2);
         }
 
         public override string ToString()
         {
-            return Jmeno + " " + Prijmeni + " s hmotností: " + Hmotnost + " a výškou: " + Vyska + " s BMI: " + BMI();
+            return Jmeno + " " + Prijmeni + " s hmotností: " + Hmotnost + "kg a výškou: " + Vyska + "m s BMI: " + BMI();
         }
     }
 }

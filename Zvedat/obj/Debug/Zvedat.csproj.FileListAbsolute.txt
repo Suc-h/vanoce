@@ -1,0 +1,10 @@
+C:\Users\fokus\source\repos\vanoce\Zvedat\bin\Debug\Zvedat.exe.config
+C:\Users\fokus\source\repos\vanoce\Zvedat\bin\Debug\Zvedat.exe
+C:\Users\fokus\source\repos\vanoce\Zvedat\bin\Debug\Zvedat.pdb
+C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.csproj.AssemblyReference.cache
+C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.Form1.resources
+C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.Properties.Resources.resources
+C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.csproj.GenerateResource.cache
+C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.csproj.CoreCompileInputs.cache
+C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.exe
+C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.pdb
