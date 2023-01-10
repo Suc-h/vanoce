@@ -29,7 +29,7 @@ namespace Zvedat
         }
         public double ABSI()
         {
-            double absi = obvodpasu / (Math.Pow(BMI(),2/3) * (Math.Pow(vyska,0.5)));
+            double absi = obvodpasu / ((Math.Pow(BMI(), 0.6666666666666666666666)) * (Math.Pow(vyska,0.5)));
             return Math.Round(absi,2)/100;
         }
 

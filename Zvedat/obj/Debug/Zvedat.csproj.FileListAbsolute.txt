@@ -8,3 +8,4 @@ C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.csproj.GenerateResour
 C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.csproj.CoreCompileInputs.cache
 C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.exe
 C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.pdb
+C:\Users\fokus\source\repos\vanoce\Zvedat\obj\Debug\Zvedat.csproj.SuggestedBindingRedirects.cache

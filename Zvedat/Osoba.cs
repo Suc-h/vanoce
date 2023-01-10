@@ -14,13 +14,7 @@ namespace Zvedat
         protected int hmotnost;
         protected double vyska;
 
-        public Osoba(string jmeno, string prijmeni, int hmotnost, double vyska)
-        {
-            this.jmeno = jmeno;
-            this.prijmeni = prijmeni;
-            this.hmotnost = hmotnost;
-            this.vyska = vyska;
-        }
+        
 
         string Jmeno
         {
@@ -52,16 +46,19 @@ namespace Zvedat
             }
             set
             {
-                if(value>0&& value <=300)
+
+                if (value <= 300 && value > 0)
                 {
-                   hmotnost = value;
+                    hmotnost = value;
                 }
                 else
                 {
                     MessageBox.Show("Hmotnost mimo rozsah!");
+                    hmotnost = 0;
                 }
             }
         }
+       
         double Vyska
         {
             get
@@ -70,18 +67,21 @@ namespace Zvedat
             }
             set
             {
-                 if(value>2.72) // nejvyšší člověk v historii 2,72m
-                 {
-                     vyska = value;
-                 }
-                 else
-                 {
-                     vyska = value / 100;
-                 }
-                
+                if (value < 3)
+                    vyska = value;
+                else
+                    vyska = value / 100;
+
             }
         }
-        
+        public Osoba(string jmeno, string prijmeni, int hmotnost, double vyska)
+        {
+            this.jmeno = jmeno;
+            this.prijmeni = prijmeni;
+            this.Hmotnost = hmotnost;
+            this.Vyska = vyska;
+        }
+
         public virtual double BMI()
         {
             double bmi = hmotnost / (vyska * vyska);

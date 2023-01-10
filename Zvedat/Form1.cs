@@ -19,7 +19,7 @@ namespace Zvedat
         Pacient David;
         private void Form1_Load(object sender, EventArgs e)
         {
-            David = new Pacient((double)numericUpDown2.Value,textBox1.Text,textBox2.Text,(int)numericUpDown3.Value,(double)numericUpDown1.Value);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
